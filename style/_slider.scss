@@ -1,0 +1,39 @@
+.slider-area{
+    height: 80vh;
+    background: linear-gradient(rgba($text-color,.5),rgba($text-color,.5)), url("../../img/slider-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    .container{
+        @extend .v-center;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        .slider-box{
+            width:35rem;
+            background:$primery-color;
+            padding:2rem 1rem;
+            border-top: 4px solid $secondery-color;
+            display: flex;
+            .dot-icon{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-right: .3rem;
+                i{
+                    font-size: .5rem;
+                    margin: .2rem 0;
+                }
+            }
+            .arrow-icon{
+                margin-top: .6rem;
+                padding-right: .5rem;
+            }
+            .slider-content{
+                .custom-blue-btn span{
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}

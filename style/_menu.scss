@@ -1,0 +1,98 @@
+header{
+    background-color: $secondery-color;
+    a{
+        color: $primery-color;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        .logo{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            img{
+                width: 16rem;
+                margin-bottom: -.25rem;
+            }
+        }
+        .menu{
+            grid-column-start: 2;
+            grid-column-end: 10;
+            @extend .v-center;
+            li{
+                display: inline-block;
+                padding: .7rem;
+            }
+        }
+        .header-contact-area{
+            grid-column-start: 10;
+            grid-column-end: 13;
+            @extend .v-center;
+            li{
+                display: inline-block;
+                padding: .7rem;
+                .custom-white-btn{
+                    color: $text-color;
+                }
+            }
+        }
+    }
+    
+}
+
+// Mobile menu design 
+
+.mobile-menu{
+    display: flex;
+    align-items: center;
+    grid-column-start: 12;
+    grid-column-end: -1;
+    justify-content: center;
+    .hamburger-btn{
+        color: $primery-color;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+    .menu-overlay{
+        background: rgba(0,0,0,.95);
+        position:fixed;
+        top:0;
+        left: 0;
+        height:100%;
+        width: 0;
+        overflow: hidden;
+        transition:.5s;
+        z-index:10; 
+        span{
+            position:absolute;
+            top: 0;
+            right: 0;
+            margin: 1rem;
+            cursor: pointer;
+            i{
+                padding: 1rem;
+                color: $primery-color;
+                font-size: 1.5rem;
+            }
+        }
+        .menu-items{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                text-align: center;
+                list-style: none;
+                a{
+                    color: $primery-color;
+                    font-size: 1rem;
+                    padding: .3rem;
+                    margin: .3rem;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+ 

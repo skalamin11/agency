@@ -1,0 +1,17 @@
+/* ---- Variables----*/
+
+$primery-color: #ffffff;
+$secondery-color: #0d2481;
+$bg-color: #dcdee1;
+$text-color:#4c5b6d;
+$heading-color:#333;
+
+@mixin transation{
+    transition:all .5s ease-in-out;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}

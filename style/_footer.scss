@@ -1,0 +1,70 @@
+footer{
+    background: url("../../img/footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .footer-area{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        .about-company{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            img{
+                width: 18rem;
+            }
+            .office-address{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                div{
+                    padding-right: 2rem;
+                }
+                .descreption{
+                    padding: 1rem 0;
+                }
+            }
+        }
+        .important-links{
+            grid-column-start: 3;
+            grid-column-end: -1;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 3.5rem;
+            a{
+                color: $secondery-color;
+            }
+            ul{
+                list-style: none;
+                padding: 1rem 0;
+                li{
+                    padding:.2rem;
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        border-top:1px  dashed $text-color;
+        .descreption{
+            padding: 1rem 0;
+           
+        }
+        .terms-area{
+            align-self: center;
+            justify-self: end;
+            grid-column-start: 2;
+            grid-column-end: -1;
+            ul{
+                list-style-type: none;
+                li{
+                    display: inline-block;
+                    padding: .4rem;
+                    a{
+                        color: $secondery-color;
+                    }
+                }
+            }
+            
+        }
+    }
+}

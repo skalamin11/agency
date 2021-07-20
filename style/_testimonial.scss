@@ -1,0 +1,44 @@
+.testimonial-section{
+    .testimonial{
+        width: 33.33%;
+        float: left;
+        border-radius: .4rem;
+        box-shadow: 0 0 1rem .5rem #eee;
+        iframe{
+            width: 100%;
+            height: 15rem;
+        }
+        .testimonial-content{
+            padding: 2rem;
+            .client-title{
+                font-size: .8rem;
+            }
+            .dot-icon{
+                padding-top: 1.5rem;
+                i{
+                    font-size: .6rem;
+                }
+            }
+        }
+    }
+    .all-services{
+        width: 66.66%;
+        float: right;
+        padding: 0 5rem;
+        .descreption{
+            width: 70%;
+        }
+        .all-service-detials{
+            display: grid;
+            grid-template-columns: auto auto;
+            i{
+                font-size: 2rem;
+                padding-bottom: .5rem;
+            }
+            .descreption{
+                padding-top: 1rem;
+                width: 90%;
+            }
+        }
+    }
+}

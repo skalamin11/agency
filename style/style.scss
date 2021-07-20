@@ -1,0 +1,87 @@
+@import "resets";
+@import "config";
+@import "menu";
+@import "slider";
+@import "services";
+@import "testimonial";
+@import "news";
+@import "call";
+@import "footer";
+@import "responsive";
+
+
+a{
+    text-decoration: none;
+}
+.descreption{
+   color:$text-color;
+   padding: 2rem 0;
+}
+section{
+    padding: 3rem 0;
+    &::after{
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+.btn{
+    padding: .4rem 1rem;
+    padding-bottom: .6rem;
+    border: none;
+    border-radius: .3rem;
+    display: inline-block;
+}
+.custom-white-btn{
+    @extend .btn;
+    background-color: $primery-color;
+    color:$text-color;
+}
+.custom-blue-btn{
+    @extend .btn;
+    background-color: $secondery-color;
+    color: $primery-color;
+}
+.v-center{
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    margin:auto;
+}
+.heading-top{
+    color:$text-color;
+    font-size: .8rem;
+}
+
+// responsive area
+
+// Extra Large Devices
+@media screen and (min-width:1700px){
+    @include device-extra-large;
+}
+
+// Large Devices
+@media screen and (max-width:1200px){
+    @include device-large;
+}
+
+//Medium devices
+@media screen and (max-width:992px){
+    @include device-medium;
+}
+
+// Small devices
+@media screen and (max-width:768px){
+    @include device-small;
+}
+
+//Extra Small devices
+@media screen and (max-width:480px){
+    @include device-extra-small;
+}
+
+
+
+

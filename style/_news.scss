@@ -1,0 +1,44 @@
+.news-section{
+    .container >.descreption{
+        width: 35%;
+    }
+    .news{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 5rem;
+        .post-item:first-child{
+            grid-row-start: 1;
+            grid-row-end:3 ;
+            img{
+                width: 100%;
+            }
+            .post-content{
+                width: 100%;
+                float: none;
+            }
+        }
+        .post-item{
+            img{
+                width: 36%;
+                margin: 1rem 0;
+            }
+            .post-meta{
+                padding: .5rem;
+            }
+            .post-content{
+                width: 62%;
+                float: right;
+            }
+            .descreption{
+                padding:.8rem 0;
+            }
+            .read-more{
+                color: $secondery-color;
+            }
+        }
+    }
+    .view-more a{
+        float: right;
+    }
+}

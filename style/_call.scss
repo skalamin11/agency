@@ -1,0 +1,31 @@
+.call-section{
+    background-image: url("../../img/call-section-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $primery-color;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .call-descreption{
+            padding-right: 20%;
+            .heading-top, .descreption{
+                color: $primery-color;
+                padding-bottom: 0rem;
+            }
+        }
+        .call-no{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            .call-icon i{
+                font-size: 2.5rem;
+            }
+            .custom-blue-btn span{
+                padding-left: 2rem;
+            }
+        }
+    }
+}
